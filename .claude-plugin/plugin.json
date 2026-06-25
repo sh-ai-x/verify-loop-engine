@@ -12,8 +12,29 @@
     "iron-law",
     "verify"
   ],
-  "commands": [
-    "./commands/slop-scan.md"
-  ],
-  "hooks": "./hooks/hooks.json"
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/hooks/slop-detector.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/hooks/verify-gate.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
 }
