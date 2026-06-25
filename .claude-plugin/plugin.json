@@ -1,7 +1,7 @@
 {
   "name": "slop-shield",
-  "version": "0.2.0",
-  "description": "Filter AI slop at write time. Reject unverified completion claims. Lean output by default.",
+  "version": "0.3.0",
+  "description": "Filter AI slop at write time. Reject unverified completion claims.",
   "author": {
     "name": "sanghee"
   },
@@ -11,12 +11,6 @@
     "lean-output",
     "iron-law",
     "verify"
-  ],
-  "commands": [
-    "./commands/verify.md"
-  ],
-  "skills": [
-    "./skills/verify-loop"
   ],
   "hooks": "./hooks/hooks.json"
 }

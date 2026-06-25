@@ -6,7 +6,7 @@ Filter AI slop. Reject unverified completion claims. That's it.
 
 ```bash
 # Local
-claude --plugin-dir /Users/sanghee/dev/verify_loop_engine
+claude --plugin-dir /Users/sanghee/dev/slop-shield
 
 # Marketplace
 claude marketplace add slop-shield https://github.com/sh-ai-x/slop-shield
@@ -27,12 +27,10 @@ Both print to stderr. Neither blocks. You decide whether to act.
 ## Layout
 
 ```
-verify_loop_engine/
+slop-shield/
 ├── .claude-plugin/plugin.json   # Manifest
-├── CLAUDE.md                    # Iron laws (3)
+├── CLAUDE.md                    # Iron laws (3) — auto-loaded
 ├── README.md
-├── commands/verify.md           # /verify entry
-├── skills/verify-loop/SKILL.md
 └── hooks/
     ├── hooks.json
     ├── slop-detector.sh

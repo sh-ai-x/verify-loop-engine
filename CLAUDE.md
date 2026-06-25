@@ -1,4 +1,4 @@
-# Verify Loop Engine
+# Slop Shield
 
 > Reduce AI slop. Minimum prose. Verifiable output.
 
@@ -26,10 +26,6 @@ Both warn to stderr. They don't block. You decide.
 ## Banned phrases (auto-detected)
 
 `Certainly`, `I'd be happy to`, `Great question`, `Let's dive in`, `delve into`, `leverage`, `robust`, `comprehensive`, `tapestry`, `seamlessly`, `unleash`, `empower`, `game-changer`, `cutting-edge`, `state-of-the-art`, `It's worth noting`, `Importantly`, `In conclusion`, `Hope this helps`.
-
-## Commands
-
-- `/verify` — apply iron laws to the current task.
 
 ## Don'ts
 
