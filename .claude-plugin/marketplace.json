@@ -1,0 +1,14 @@
+{
+  "name": "slop-shield",
+  "owner": {
+    "name": "sanghee"
+  },
+  "plugins": [
+    {
+      "name": "slop-shield",
+      "source": "./",
+      "description": "Filter AI slop at write time. Reject unverified completion claims.",
+      "version": "0.3.0"
+    }
+  ]
+}
