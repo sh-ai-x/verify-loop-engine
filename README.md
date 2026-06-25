@@ -1,4 +1,4 @@
-# Verify Loop Engine
+# Slop Shield
 
 Filter AI slop. Reject unverified completion claims. That's it.
 
@@ -9,8 +9,8 @@ Filter AI slop. Reject unverified completion claims. That's it.
 claude --plugin-dir /Users/sanghee/dev/verify_loop_engine
 
 # Marketplace
-claude marketplace add verify-loop-engine https://github.com/sh-ai-x/verify-loop-engine
-claude plugin install verify-loop-engine
+claude marketplace add slop-shield https://github.com/sh-ai-x/slop-shield
+claude plugin install slop-shield
 ```
 
 ## What it does

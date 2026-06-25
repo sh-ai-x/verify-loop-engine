@@ -1,5 +1,5 @@
 {
-  "name": "verify-loop-engine",
+  "name": "slop-shield",
   "version": "0.2.0",
   "description": "Filter AI slop at write time. Reject unverified completion claims. Lean output by default.",
   "author": {
@@ -7,10 +7,10 @@
   },
   "license": "MIT",
   "keywords": [
-    "verify-loop",
     "anti-slop",
     "lean-output",
-    "iron-law"
+    "iron-law",
+    "verify"
   ],
   "commands": [
     "./commands/verify.md"
