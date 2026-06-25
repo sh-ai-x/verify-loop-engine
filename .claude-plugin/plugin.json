@@ -1,6 +1,6 @@
 {
   "name": "slop-shield",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Filter AI slop at write time. Reject unverified completion claims.",
   "author": {
     "name": "sanghee"
@@ -11,32 +11,5 @@
     "lean-output",
     "iron-law",
     "verify"
-  ],
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Edit|Write|MultiEdit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash",
-            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/slop-detector.sh"],
-            "timeout": 5
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash",
-            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/verify-gate.sh"],
-            "timeout": 5
-          }
-        ]
-      }
-    ]
-  }
+  ]
 }
